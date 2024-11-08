@@ -1,0 +1,59 @@
+# change window focus within space
+cmd - i : yabai -m window --focus north
+cmd - k : yabai -m window --focus south
+cmd - j : yabai -m window --focus west || yabai -m display --focus west
+cmd - l : yabai -m window --focus east || yabai -m display --focus east
+
+# move windows spaces xdxd
+shift + cmd - o : yabai -m window --space prev
+shift + cmd - p : yabai -m window --space next
+
+# rotate layout clockwise
+shift + cmd - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + cmd - y : yabai -m space --mirror y-axis
+
+# toggle window float
+shift + cmd - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# maximize a window
+shift + cmd - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out tree of windows (resize to occupy same area)
+shift + cmd - b : yabai -m space --balance
+
+# create space
+shift + cmd - n : yabai -m space --create
+
+# swap windows
+shift + cmd - k : yabai -m window --swap south
+shift + cmd - i : yabai -m window --swap north
+shift + cmd - j : yabai -m window --swap west
+shift + cmd - l : yabai -m window --swap east
+
+# move window to space 
+shift + cmd - 1 : yabai -m window --space 1
+shift + cmd - 2 : yabai -m window --space 2
+shift + cmd - 3 : yabai -m window --space 3
+shift + cmd - 4 : yabai -m window --space 4
+shift + cmd - 5 : yabai -m window --space 5
+shift + cmd - 6 : yabai -m window --space 6
+shift + cmd - 7 : yabai -m window --space 7
+
+# spaces switch binds
+cmd - 1 : skhd --key "ctrl - 1"
+cmd - 2 : skhd --key "ctrl - 2"
+cmd - 3 : skhd --key "ctrl - 3"
+cmd - 4 : skhd --key "ctrl - 4"
+cmd - 5 : skhd --key "ctrl - 5"
+cmd - 6 : skhd --key "ctrl - 6"
+cmd - 7 : skhd --key "ctrl - 7"
+cmd - 8 : skhd --key "ctrl - 8"
+cmd - 9 : skhd --key "ctrl - 9"
+
+# Terminal
+cmd - return : alacritty
+
+# stop/start/restart yabai
+ctrl + alt - r : yabai --restart-service;
