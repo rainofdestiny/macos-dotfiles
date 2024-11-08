@@ -38,10 +38,6 @@ cp "$HOME/dotfiles/config/skhd/skhdrc" ~/.config/skhd/
 
 cp "$HOME/dotfiles/config/zsh/zshrc" ~/.zshrc
 
-# Apply Zsh configuration
-echo "Applying Zsh configuration..."
-source ~/.zshrc
-
 # Step 4: Install oh-my-zsh for extended zsh configuration
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "Installing oh-my-zsh..."
@@ -77,6 +73,7 @@ if [ -f "$DOCK_SETTINGS_SRC" ]; then
 else
     echo "Dock settings file not found."
 fi
+killall Dock
 
 # Copy Keyboard settings
 echo "Applying Keyboard settings..."
@@ -113,3 +110,14 @@ fi
 
 # Final message
 echo "Installation and configuration complete! Please restart the terminal to apply all changes."
+
+# Step 8: Apply Zsh configuration (must be done inside Zsh)
+echo "Applying Zsh configuration..."
+if [ -n "$ZSH_VERSION" ]; then
+    # If we're inside Zsh, apply configuration
+    source ~/.zshrc
+    echo "Zsh configuration applied."
+else
+    # If we're in Bash, suggest running Zsh
+    echo "Please run Zsh and apply your configuration manually with: source ~/.zshrc"
+fi
