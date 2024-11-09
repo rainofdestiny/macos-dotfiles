@@ -4,6 +4,7 @@ CONFIGS=(
   "$HOME/.config/yabai/yabairc:$HOME/dotfiles/config/yabai/yabairc"
   "$HOME/.config/skhd/skhdrc:$HOME/dotfiles/config/skhd/skhdrc"
   "$HOME/.config/alacritty/alacritty.toml:$HOME/dotfiles/config/alacritty/alacritty.toml"
+  "$HOME/.zshrc:$HOME/dotfiles/config/zsh/zshrc"
 )
 
 for config in "${CONFIGS[@]}"; do

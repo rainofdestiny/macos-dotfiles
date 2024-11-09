@@ -2,7 +2,7 @@
 
 This project automates the installation of applications and system preferences on macOS.
 
-## Installation
+## Setup
 Open a terminal and paste
 
 ```shell
@@ -12,7 +12,9 @@ chmod +x install.sh
 ./install.sh
 ```
 
-## Export 
+Follow instructions in terminal.
+
+## Grab 
 Open a terminal and paste
 
 ```shell
