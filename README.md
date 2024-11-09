@@ -8,8 +8,8 @@ Open a terminal and paste
 ```shell
 git clone https://github.com/rainofdestiny/macos-dotfiles
 cd macos-dotfiles
-chmod +x install.sh
-./install.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 Follow instructions in terminal.

@@ -4,12 +4,12 @@
 echo "Copying configuration files..."
 
 mkdir -p ~/.config/alacritty
-cp "$HOME/dotfiles/config/alacritty/alacritty.yml" ~/.config/alacritty/
+cp "$HOME/macos-dotfiles/config/alacritty/alacritty.toml" ~/.config/alacritty/
 
 mkdir -p ~/.config/yabai
-cp "$HOME/dotfiles/config/yabai/yabairc" ~/.config/yabai/
+cp "$HOME/macos-dotfiles/config/yabai/yabairc" ~/.config/yabai/
 
 mkdir -p ~/.config/skhd
-cp "$HOME/dotfiles/config/skhd/skhdrc" ~/.config/skhd/
+cp "$HOME/macos-dotfiles/config/skhd/skhdrc" ~/.config/skhd/
 
-cp "$HOME/dotfiles/config/zsh/zshrc" ~/.zshrc
+cp "$HOME/macos-dotfiles/config/zsh/zshrc" ~/.zshrc

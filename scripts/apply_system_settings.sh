@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Step 7: Apply system settings from dotfiles/system/
+# Step 7: Apply system settings from macos-dotfiles/system/
 
 # Dock settings
 echo "Applying Dock settings..."
-DOCK_SETTINGS_SRC="$HOME/dotfiles/system/com.apple.dock.plist"
+DOCK_SETTINGS_SRC="$HOME/macos-dotfiles/system/com.apple.dock.plist"
 DOCK_SETTINGS_DEST="$HOME/Library/Preferences/com.apple.dock.plist"
 if [ -f "$DOCK_SETTINGS_SRC" ]; then
     cp "$DOCK_SETTINGS_SRC" "$DOCK_SETTINGS_DEST"
@@ -16,7 +16,7 @@ fi
 
 # Keyboard settings
 echo "Applying Keyboard settings..."
-KEYBOARD_SETTINGS_SRC="$HOME/dotfiles/system/com.apple.keyboardtype.plist"
+KEYBOARD_SETTINGS_SRC="$HOME/macos-dotfiles/system/com.apple.keyboardtype.plist"
 KEYBOARD_SETTINGS_DEST="$HOME/Library/Preferences/com.apple.keyboardtype.plist"
 if [ -f "$KEYBOARD_SETTINGS_SRC" ]; then
     cp "$KEYBOARD_SETTINGS_SRC" "$KEYBOARD_SETTINGS_DEST"
@@ -27,7 +27,7 @@ fi
 
 # Control Centre settings
 echo "Applying Control Centre settings..."
-CONTROL_CENTRE_SETTINGS_SRC="$HOME/dotfiles/system/com.apple.controlcenter.plist"
+CONTROL_CENTRE_SETTINGS_SRC="$HOME/macos-dotfiles/system/com.apple.controlcenter.plist"
 CONTROL_CENTRE_SETTINGS_DEST="$HOME/Library/Preferences/com.apple.controlcenter.plist"
 if [ -f "$CONTROL_CENTRE_SETTINGS_SRC" ]; then
     cp "$CONTROL_CENTRE_SETTINGS_SRC" "$CONTROL_CENTRE_SETTINGS_DEST"
@@ -38,7 +38,7 @@ fi
 
 # Sound settings
 echo "Applying Sound settings..."
-SOUND_SETTINGS_SRC="$HOME/dotfiles/system/com.apple.soundsettings.plist"
+SOUND_SETTINGS_SRC="$HOME/macos-dotfiles/system/com.apple.soundsettings.plist"
 SOUND_SETTINGS_DEST="$HOME/Library/Preferences/ByHost/com.apple.soundsettings.plist"
 if [ -f "$SOUND_SETTINGS_SRC" ]; then
     cp "$SOUND_SETTINGS_SRC" "$SOUND_SETTINGS_DEST"
