@@ -3,7 +3,8 @@
 This project automates the installation of applications and system preferences on macOS.
 
 ## Setup
-Open a terminal and paste
+1. Install [git](https://git-scm.com/downloads/mac)
+2. Open a terminal
 
 ```shell
 git clone https://github.com/rainofdestiny/macos-dotfiles
@@ -23,3 +24,8 @@ cd macos-dotfiles
 chmod +x grab.sh
 ./grab.sh
 ```
+
+## ToDo
+- [ ] Control Centre
+- [ ] Sound
+- [ ] Keyboard shortcuts
